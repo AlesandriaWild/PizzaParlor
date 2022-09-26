@@ -16,7 +16,7 @@
       <h2>Here at Pizzachu, we subscribe to the philosophy of their is no bad pizza. Every topping is wanted just as much as the last. We carry this mentality over to our customers too, and offer a phrase of affirmation or a "dad" joke with each purchase!</h2>
     </div>
     <br>
-    <hr>
+    <br>
     <div class="container">
       <h2>Specials:</h2>
       <div class=""></div>
@@ -24,8 +24,6 @@
         <p>The Bulbasaur is our plant based pizza, that comes with vegan mozzerella and dough, spinach, artachoke, garlic, white corn, and mushrooms.</p>
         <img src=https://plantd.co/wp-content/uploads/2019/07/mushNEW_-Plantd-article-size-1-1-1024x768.jpg height="200">
       </div>
-      <hr>
-      <br>
       <br>
       <br>
       <div class="container">
@@ -34,12 +32,13 @@
         <img src ="https://cookingwithcarbs.com/wp-content/uploads/2021/06/spicy-sausage-pizza-final8-min.jpg" height="200">
       </div>
       <br>
-      <hr>
+      <br>
       <div class="container">
         <h3>The Squirtle!</h3>
         <p>The squirtle is our sauciest pizza! This pizza comes with alfredo sauce as the base, has the same mix of mozzerella and asiago cheese that the Charmander comes with. With no other tradtional toppings adding, we put a swirl of pesto, buffalo, AND garlic parmisian on top, making this the most moist pizza you've ever seen! But we're not done there! This pizza also comes with pizza sauce on the side for you to dip your pizza slices in!</p>
         <img src ="https://bigtimemeals.com/wp-content/uploads/2020/09/Untitled-design-70-1-1024x784.jpg" height="200">
       </div>
+      <br>
       <br>
       <div class="container">
         <h3>The Pokeball!</h3>
@@ -47,50 +46,153 @@
         <img src="https://fabeveryday.com/wp-content/uploads/2016/12/PokemonParty283329.jpg" height="200">
       </div>
     </div>
-    <hr>
+    <br>
+    <hr class="hr">
     <div class = "container">
       <div class ="row">
         <div class = "col-6">
           <h2>Toppings:</h2>
           <br>
           <h3>Meat:</h3>
-          <ol>
+          <ul>
             <li>Chicken</li>
             <li>Bacon</li>
             <li>Beef</li>
             <li>Sausage</li>
             <li>Pepparoni</li>
             <li>Anchovi</li>
-          </ol>
+          </ul>
           <h3>Veggies:</h3>
-          <ol>
+          <ul>
             <li>Spinach</li>
             <li>Artichoke</li>
             <li>Garlic</li>
             <li>Green Pepper</li>
             <li>Banana Pepper</li>
             <li>Olives</li>
-          </ol>
+          </ul>
         </div>
         <div class = "col-6">
           <h2>Sauces:</h2>
-          <ol>
+          <ul>
             <li>Tomato</li>
             <li>Alfredo</li>
             <li>Garlic Parm</li>
-            <li>Pestp</li>
+            <li>Pesto</li>
             <li>Spicy Red</li>
-          </ol>
+          </ul>
           <h3>Vegan meat and sauce alternatives:</h3>
-          <ol>
+          <ul>
             <li>Impossible Beef</li>
             <li>Jackfruit Chicken</li>
             <li>Banana Bacon</li>
             <br>
             <li>Almond Milk Alfredo</li>
             <li>Almond Milk Garlic Parm</li>
-          </ol>
+            <br>
+            <li>*Every vegan pizza comes with vegan cheese and dough unless stated otherwise!</li>
+          </ul>
         </div>
+      </div>
+    </div>
+    <div class="container">
+    <h2>Crust:</h2>
+      <ul>
+        <li>Traditional</li>
+        <li>Thicccccc</li>
+        <li>Pan</li>
+        <li>Thin</li>
+        <li>Vegan</li>
+      </ul>
+    </div>
+    <hr class="hr">
+    <form id="customer-order">
+      <div class="container">
+        <h2>Order here!</h2>
+        <br>
+        <h3>Choose Your Pizza Size:</h3>
+        <select class="pizza-size" id ="pizza-size">
+          <option value="sm">Small</option>
+          <option value="md">Medium</option>
+          <option value="lg">Large</option>
+          <option value="dd">Deep Dish</option>
+          <option value="pan">Pan</option>
+        </select>
+      </div>
+      <br>
+      <div class="container">
+        <h3>Choose Your Crust Type:</h3>
+        <select class="pizza-crust" id="pizza-crust">
+          <option value="traditional">Traditional</option>
+          <option value="thic">Thicccccc</option>
+          <option value="pan">Pan</option>
+          <option value="thin">Thin</option>
+          <option value="vegan">Vegan</option>
+        </select>
+      </div>
+      <br>
+      <div class="container">
+        <h3>Choose Your Sauce:</h3>
+        <select class="pizza-sauce" id="pizza-sauce">
+          <option value="tomato">Tomato</option>
+          <option value="alfredp">Alfredo</option>
+          <option value="garlic-parm">Garlic Parm</option>
+          <option value="pesto">Pesto</option>
+          <option value="spicy-red">Spicy Red</option>
+          <option value="vegan-a">Almomd Milk Alfredo</option>
+          <option value="vegan-gp">Almond Milk Garlic Parm</option>
+        </select>
+      </div>
+      <div class="container">
+        <h3 id="pizza-toppings">Choose Your Toppings:</h3>
+        <br>
+        <h3>Meat:</h3>
+        <input type="checkbox" id="chicken" value="chicken">
+        <label for="chicken">Chicken</label>
+        <input type="checkbox" id="bacon" value="bacon">
+        <label for="bacon">Bacon</label>
+        <input type="checkbox" id="beef" value="beef">
+        <label for="beef">Beef</label>
+        <input type="checkbox" id="sausage" value="sausage">
+        <label for="sausage">Sausage</label>
+        <input type="checkbox" id="pepparoni" value="pepparoni">
+        <label for="pepparoni">Pepparoni</label>
+        <input type="checkbox" id="anchovi" value="anchovi">
+        <label for="anchovi">Anchovi</label>
+        <input type="checkbox" id="impossible" value="impossible">
+        <label for="impossible">Impossible Beef</label>
+        <input type="checkbox" id="jackfruit-chicken" value="jackfruit-chicken">
+        <label for="jackfruit-chicken">Jackfruit Chicken</label>
+        <input type="checkbox" id="banana-bacon" value="banana-bacon">
+        <label for="banana-bacon">Banana Bacon</label>
+        <br>
+        <br>
+        <h3>Veggies:</h3>
+        <input type="checkbox" id="spinach" value="spinach">
+        <label for="spinach">Spinach</label>
+        <input type="checkbox" id="artichoke" value="artichoke">
+        <label for="artichoke">Artichoke</label>
+        <input type="checkbox" id="garlic" value="garlic">
+        <label for="garlic">Garlic</label>
+        <input type="checkbox" id="green-pepper" value="green-pepper">
+        <label for="green-pepper">Green Pepper</label>
+        <input type="checkbox" id="banana-pepper" value="banana-pepper">
+        <label for="banana-pepper">Banana Pepper</label>
+        <input type="checkbox" id="olives" value="olives">
+        <label for="olives">Olives</label>
+      </div>
+      <br>
+      <button id="submit-order" type="submit" class="btn-color">Submit your order here!</button>
+      <br>
+    </form>
+    <hr class="hr">
+    <div class="container">
+      <div id="total" class="hidden">
+        <h3>Your order is :</h3>
+        <p><span class="pizza-size"></span></p>
+        <p><span class="pizza-crust"></span></p>
+        <p><span class="pizza-toppings"></span></p>
+        <p>Your total comes to: $ <span class="total">.</span></p>
       </div>
     </div>
   </body>

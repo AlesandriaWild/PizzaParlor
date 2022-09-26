@@ -5,15 +5,22 @@
 .header {
   text-align: center;
   color: aquamarine;
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
   background-image: url(https://i.kym-cdn.com/photos/images/original/000/742/542/643.gif);
   background-size: 101px; ;
 } 
 
-.bulb {
-  float: right;
+.hr {
+  background-color: aquamarine;
 }
 
-.char {
-  float:left;
+.btn-color {
+  color:aquamarine;
+  background-color: rgb(40, 40, 40);
+  margin:0 auto;
+  display:block;
+}
+
+.hidden {
+  display: none;
 }
