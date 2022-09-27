@@ -42,12 +42,9 @@ function handleSubmitOrder(e){
   const psize = document.getElementById("pizza-size").value;
   const pcrust = document.getElementById("pizza-crust").value;
   const psauce = document.getElementById("pizza-sauce").value;
-  const toppArray = [];
-  const topp = document.querySelector("input[type=checkbox][name='pizza-toppings']:checked");
-  for(let i = 0; i <topp; i++) {
-    toppArray.push(topp[i].value)
-  };
 
+
+  
   const custOrderTotal = new Order(psize, pcrust, psauce, topp);
   let orderCost = custOrderTotal.orderTotal();
   let toppings = toppArray.join(", ");
