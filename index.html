@@ -4,7 +4,7 @@
   <title>Pizzachu</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="scripts.js"></script>
+  <script src="js/scripts.js"></script>
 </head>  
   <body class="bg">
     <div class="header">
@@ -106,17 +106,18 @@
       </ul>
     </div>
     <hr class="hr">
+    <div id="cust-order">
     <form id="customer-order">
       <div class="container">
         <h2>Order here!</h2>
         <br>
         <h3>Choose Your Pizza Size:</h3>
         <select class="pizza-size" id ="pizza-size">
-          <option value="sm">Small</option>
-          <option value="md">Medium</option>
-          <option value="lg">Large</option>
-          <option value="dd">Deep Dish</option>
-          <option value="pan">Pan</option>
+          <option value="sm">Stage 1 (small)</option>
+          <option value="md">Stage 2 (medium)</option>
+          <option value="lg">Stage 3 (lg)</option>
+          <option value="dd">Super V-MAX (Deep Dish)</option>
+          <option value="pan">Shiny (Pan)</option>
         </select>
       </div>
       <br>
@@ -125,7 +126,6 @@
         <select class="pizza-crust" id="pizza-crust">
           <option value="traditional">Traditional</option>
           <option value="thic">Thicccccc</option>
-          <option value="pan">Pan</option>
           <option value="thin">Thin</option>
           <option value="vegan">Vegan</option>
         </select>
@@ -144,7 +144,7 @@
         </select>
       </div>
       <div class="container">
-        <h3 id="pizza-toppings">Choose Your Toppings:</h3>
+        <h3 id="pizzatoppings">Choose Your Toppings:</h3>
         <br>
         <h3>Meat:</h3>
         <input type="checkbox" id="chicken" value="chicken">
@@ -185,14 +185,16 @@
       <button id="submit-order" type="submit" class="btn-color">Submit your order here!</button>
       <br>
     </form>
+    </div>
     <hr class="hr">
     <div class="container">
       <div id="total" class="hidden">
         <h3>Your order is :</h3>
-        <p><span class="pizza-size"></span></p>
-        <p><span class="pizza-crust"></span></p>
-        <p><span class="pizza-toppings"></span></p>
-        <p>Your total comes to: $ <span class="total">.</span></p>
+        <p><span class="r-size"></span></p>
+        <p><span class="r-crust"></span></p>
+        <p><span class="r-sauce"></span></p>
+        <p><span class="r-toppings"></span></p>
+        <p>Your total comes to: $ <span class="r-total">.</span></p>
       </div>
     </div>
   </body>
