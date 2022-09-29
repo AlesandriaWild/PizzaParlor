@@ -11,23 +11,23 @@ Order.prototype.orderTotal = function () {
     defaultTotal = (index + 1);
   });
   
-  if (this.pizzaSize === "sm") {
+  if (this.pizzaSize === "Stage 1 (medium)") {
     defaultTotal += 15;
-  } else if (this.pizzaSize === "md") {
+  } else if (this.pizzaSize === "Stage 2 (medium)") {
     defaultTotal += 20;
-  } else if (this.pizzaSize === "lg") {
+  } else if (this.pizzaSize === "Stage 3 (lg)") {
     defaultTotal += 25;
-  } else if (this.pizzaSize === "dd") {
+  } else if (this.pizzaSize === "Super V-MAX (Deep Dish)") {
     defaultTotal += 30;
-  } else if (this.pizzaSize === "pan") {
+  } else if (this.pizzaSize === "Shiny (Pan)") {
     defaultTotal += 25;
   };
 
-  if (this.pizzaCrust === "thin") {
+  if (this.pizzaCrust === "Thin") {
     defaultTotal += 3;
-  } else if (this.pizzaCrust === "thic") {
+  } else if (this.pizzaCrust === "Thicccccc") {
     defaultTotal += 7;
-  } else if (this.pizzaCrust === "vegan") {
+  } else if (this.pizzaCrust === "Vegan") {
     defaultTotal += 3;
   } else {
     defaultTotal += 0;
@@ -42,18 +42,21 @@ function handleSubmitOrder(e){
   const psize = document.getElementById("pizza-size").value;
   const pcrust = document.getElementById("pizza-crust").value;
   const psauce = document.getElementById("pizza-sauce").value;
+  let toppingsArray = [];
+  document.querySelectorAll("input[name=pizza-toppings]:checked").forEach(function(element) {
+    let topping = element['value'];
+    toppingsArray.push(topping);
+  });
 
-
-  
-  const custOrderTotal = new Order(psize, pcrust, psauce, topp);
+  const custOrderTotal = new Order(psize, pcrust, psauce, toppingsArray);
   let orderCost = custOrderTotal.orderTotal();
-  let toppings = toppArray.join(", ");
+  let toppings = toppingsArray.join(", ");
   document.getElementById("total").removeAttribute("class");
-  document.querySelector("r-size").innerText = psize;
-  document.querySelector("r-crust").innerText = pcrust;
-  document.querySelector("r-sauce").innerText = psauce;
-  document.querySelector("r-toppings").innerText = toppings;
-  document.querySelector("r-total").innerText = orderCost;
+  document.querySelector("span.r-size").innerText = psize;
+  document.querySelector("span.r-crust").innerText = pcrust;
+  document.querySelector("span.r-sauce").innerText = psauce;
+  document.querySelector("span.r-toppings").innerText = toppings;
+  document.querySelector("span.r-total").innerText = orderCost;
 }
 
 window.addEventListener("load",function() {

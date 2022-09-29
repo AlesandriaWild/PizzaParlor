@@ -44,9 +44,11 @@
         <p>The Pokeball is a half cheese, half pepparoni pizza, that is split down the middle with a small circle made of olives.</p>
         <img src="https://fabeveryday.com/wp-content/uploads/2016/12/PokemonParty283329.jpg" height="200">
       </div>
-      <p>*specials can not be ordered online at this time. Please call (555)555-5555 if you wish to place and ordeer for one of our specials.</p>
-      <p>-Thank you management.</p>
-    </div>
+      <div class ="container">
+        <p>*specials can not be ordered online at this time. Please call (555)555-5555 if you wish to place and ordeer for one of our specials.</p>
+        <p>-Thank you management.</p>
+      </div>
+      </div>
     <hr class="hr">
     <div class = "container">
       <div class ="row">
@@ -112,73 +114,73 @@
         <h2>Order here!</h2>
         <br>
         <h3>Choose Your Pizza Size:</h3>
-        <select class="pizza-size" id ="pizza-size">
-          <option value="sm">Stage 1 (small)</option>
-          <option value="md">Stage 2 (medium)</option>
-          <option value="lg">Stage 3 (lg)</option>
-          <option value="dd">Super V-MAX (Deep Dish)</option>
-          <option value="pan">Shiny (Pan)</option>
+        <select class="pizza-size" id="pizza-size">
+          <option value="Stage 1 (small)">Stage 1 (small)</option>
+          <option value="Stage 2 (medium)">Stage 2 (medium)</option>
+          <option value="Stage 3 (lg)">Stage 3 (lg)</option>
+          <option value="Super V-MAX (Deep Dish)">Super V-MAX (Deep Dish)</option>
+          <option value="Shiny (Pan)">Shiny (Pan)</option>
         </select>
       </div>
       <br>
       <div class="container">
         <h3>Choose Your Crust Type:</h3>
         <select class="pizza-crust" id="pizza-crust">
-          <option value="traditional">Traditional</option>
-          <option value="thic">Thicccccc</option>
-          <option value="thin">Thin</option>
-          <option value="vegan">Vegan</option>
+          <option value="Traditional">Traditional</option>
+          <option value="Thicccccc">Thicccccc</option>
+          <option value="Thin">Thin</option>
+          <option value="Vegan">Vegan</option>
         </select>
       </div>
       <br>
       <div class="container">
         <h3>Choose Your Sauce:</h3>
         <select class="pizza-sauce" id="pizza-sauce">
-          <option value="tomato">Tomato</option>
-          <option value="alfredp">Alfredo</option>
-          <option value="garlic-parm">Garlic Parm</option>
-          <option value="pesto">Pesto</option>
-          <option value="spicy-red">Spicy Red</option>
-          <option value="vegan-a">Almomd Milk Alfredo</option>
-          <option value="vegan-gp">Almond Milk Garlic Parm</option>
+          <option value="Tomato">Tomato</option>
+          <option value="Alfredo">Alfredo</option>
+          <option value="Garlic Parm">Garlic Parm</option>
+          <option value="Pesto">Pesto</option>
+          <option value="Spicy Red">Spicy Red</option>
+          <option value="Almomd Milk Alfredo">Almomd Milk Alfredo</option>
+          <option value="Almond Milk Garlic Parm">Almond Milk Garlic Parm</option>
         </select>
       </div>
       <div class="container">
-        <h3 id="pizzatoppings">Choose Your Toppings:</h3>
+        <h3>Choose Your Toppings:</h3>
         <br>
         <h3>Meat:</h3>
-        <input type="checkbox" id="chicken" value="chicken">
+        <input type="checkbox" id="chicken" value="chicken" name="pizza-toppings">
         <label for="chicken">Chicken</label>
-        <input type="checkbox" id="bacon" value="bacon">
+        <input type="checkbox" id="bacon" value="bacon" name="pizza-toppings">
         <label for="bacon">Bacon</label>
-        <input type="checkbox" id="beef" value="beef">
+        <input type="checkbox" id="beef" value="beef" name="pizza-toppings">
         <label for="beef">Beef</label>
-        <input type="checkbox" id="sausage" value="sausage">
+        <input type="checkbox" id="sausage" value="sausage" name="pizza-toppings">
         <label for="sausage">Sausage</label>
-        <input type="checkbox" id="pepparoni" value="pepparoni">
+        <input type="checkbox" id="pepparoni" value="pepparoni" name="pizza-toppings">
         <label for="pepparoni">Pepparoni</label>
-        <input type="checkbox" id="anchovi" value="anchovi">
+        <input type="checkbox" id="anchovi" value="anchovi" name="pizza-toppings">
         <label for="anchovi">Anchovi</label>
-        <input type="checkbox" id="impossible" value="impossible">
+        <input type="checkbox" id="impossible" value="impossible" name="pizza-toppings">
         <label for="impossible">Impossible Beef</label>
-        <input type="checkbox" id="jackfruit-chicken" value="jackfruit-chicken">
+        <input type="checkbox" id="jackfruit-chicken" value="jackfruit-chicken" name="pizza-toppings">
         <label for="jackfruit-chicken">Jackfruit Chicken</label>
-        <input type="checkbox" id="banana-bacon" value="banana-bacon">
+        <input type="checkbox" id="banana-bacon" value="banana-bacon" name="pizza-toppings">
         <label for="banana-bacon">Banana Bacon</label>
         <br>
         <br>
         <h3>Veggies:</h3>
-        <input type="checkbox" id="spinach" value="spinach">
+        <input type="checkbox" id="spinach" value="spinach" name="pizza-toppings">
         <label for="spinach">Spinach</label>
-        <input type="checkbox" id="artichoke" value="artichoke">
+        <input type="checkbox" id="artichoke" value="artichoke" name="pizza-toppings">
         <label for="artichoke">Artichoke</label>
-        <input type="checkbox" id="garlic" value="garlic">
+        <input type="checkbox" id="garlic" value="garlic" name="pizza-toppings">
         <label for="garlic">Garlic</label>
-        <input type="checkbox" id="green-pepper" value="green-pepper">
+        <input type="checkbox" id="green-pepper" value="green-pepper" name="pizza-toppings">
         <label for="green-pepper">Green Pepper</label>
-        <input type="checkbox" id="banana-pepper" value="banana-pepper">
+        <input type="checkbox" id="banana-pepper" value="banana-pepper" name="pizza-toppings">
         <label for="banana-pepper">Banana Pepper</label>
-        <input type="checkbox" id="olives" value="olives">
+        <input type="checkbox" id="olives" value="olives" name="pizza-toppings">
         <label for="olives">Olives</label>
       </div>
       <br>
